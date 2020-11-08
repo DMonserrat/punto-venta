@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Monse</title>
+    <link rel="stylesheet" href="./css/normalize.css" >
+    <link rel="stylesheet" href="./css/style.css" >
+    
+</head>
+
+<body>
+    
+
+    <header>
+
+        <nav>
+            <div class="logo">
+                <img src="./img/girl-N.png" alt="Logo Girl">
+            </div>
+            <div class="navi">
+                <ul>
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </div>
+            <div class="buskr">
+                <input type="text" placeholder="Search..">
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <aside onload="startTime()">
+            <div class="article">
+                <p id="hora"></p>
+                <p id="dia"></p>
+            </div>
+            <div class="cont_2">
+                <ul>
+                    <li><a class="active" href="#emprende">Home</a></li>
+                    <li><a href="#catalogo">Catalogo</a></li>
+                    <li><a href="#formulario">Nuevo producto</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+            </div>
+        </aside>
+            <div class="article">
+                <div class="group1">
+                    <h1>Autonomía económica</h1>
+                    <h3>Igualdad de Género en el ambiente Laboral</h3>
+                </div>
+                <div class="parrafo">
+                    <p>La autonomía económica se explica como la capacidad de las mujeres de generar ingresos y recursos 
+                        propios a partir del acceso al trabajoremunerado en igualdad de condiciones que los hombres.
+                        Considera el uso del tiempo y la contribución de las mujeres a la economía.</p>
+                    <p>La discriminación de género implica que a menudo las mujeres acaban desempeñando trabajos no 
+                        seguros y mal pagados, y siguen siendo una pequeña minoría en puestos directivos. 
+                        La discriminación también reduce el acceso a bienes económicos como la tierra y los préstamos 
+                        y limita su participación en el diseño de políticas sociales y económicas. </p>
+                    <p>ONU Mujeres México pone especial énfasis en programas innovadores para impulsar la 
+                        autonomía económica de las mujeres considerando, entre sus prioridades a las trabajadoras 
+                        migrantes y las emprendedoras rurales e indígenas</p>
+                    <p>Una de las razones de las mujeres que se mantienen en condición de inactividad en el 
+                        mercado de trabajo, son las tareas de cuidado y las labores domésticas; es decir, son pobres 
+                        de tiempo para acceder al mercado de trabajo remunerado.</p>
+                    <p>El 45% de quienes realizan investigación científica es mujer, pero en educación, humanidades, salud, 
+                        ciencias sociales, trabajos con menor remuneración que los relacionados a las ciencias “duras”. 
+                        En promedio, en el 2010, las mujeres ganaban mensualmente sólo el 78% de lo percibido por 
+                        los hombres.</p>
+                    <p>A pesar de la creatividad de las mujeres en la lucha por su autonomía, muchas encuentran restricciones 
+                        para conseguirla. Existen países, comunidades o familias donde ellas precisan, por ley o por costumbre, 
+                        la autorización del padre, del marido o de un hombre de la familia para ejercer un trabajo remunerado.</p>
+                    <p> En África del Norte la participación de las mujeres en el mercado de trabajo es bajísima, debido al 
+                        hecho de que la mayoría de las mujeres debe pedir permiso a un miembro masculino de la familia para 
+                        trabajar fuera de casa.</p>
+                </div>
+                <div class="imagenes">
+                    <div class="img_uno">
+                        <img src="./img/student.png" alt="Student Girl" >
+                    </div>
+                </div>
+            </div>
+            
+
+    </section>
+    <section id="catalogo">
+        <div class="article">
+            <h3>Productos en Tienda</h3>
+            <div class="caja">
+                <div class="tienda">
+                    <div class="producto">
+                        <form>
+                            
+                            <label for="tienda" class="container"> 
+                                <input type="checkbox" name="prod" value="aceite">Aceite $35
+                            </label>
+                            <label for="tienda" class="container">
+                                <input type="checkbox" name="prod" value="leche">Leche $45
+                            </label>
+                            <label for="tienda" class="container">
+                                <input type="checkbox" name="prod" value="harina">Harina $35
+                            </label>
+                            <label for="tienda" class="container">
+                                <input type="checkbox" name="prod" value="queso">Queso $25
+                            </label>
+                            <label for="tienda" class="container">
+                                <input type="checkbox" name="prod" value="gelatina">Gelatina $15
+                            </label>
+                            <label for="tienda" class="container">
+                                <input type="checkbox" name="prod" value="sardina">Sardina $27
+                            </label>
+                            <label for="tienda" class="container">
+                                <input type="checkbox" name="prod" value="rajas">Rajas $20
+                            </label>
+                            <label for="tienda" class="container">
+                                <input type="checkbox" name="prod" value="atún">Atún $30
+                            </label>
+                            <label for="tienda" class="container">
+                                <input type="checkbox" name="prod" value="jugo">Jugo $25
+                            </label>
+                            <label for="tienda" class="container">
+                                <input type="checkbox" name="prod" value="mantequilla">Mantequilla $12
+                            </label> <br>
+
+                            <button class="button" type="button" onclick="nueva_compra()">Comprar</button>
+                    
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+            
+
+            
+        </div>
+    </section>
+    <section id="formulario">
+        <div class="article">
+            <h3>Nuevo producto</h3>
+            <form>
+                <label for="abarr_nombre">Nombre del Producto</label><br>
+                <input type="text" name="abarr_nombre" id="abarr_nombre" placeholder="Nombre del Producto">
+                <label for="costo">Costo</label>
+                <input type="number" id="costo" name="costo" placeholder="Costo del producto"><br>
+                <label for="cantidad">Cantidad</label>
+                <input type="number" id="cantidad" name="cantidad" placeholder="Costo del producto"><br>
+                <label for="categoria">Categoria</label>
+                <select id="categoria" name="categoria">
+                    <option selected>Selecciona</option>
+                    <option value="1">Abarrotes</option>
+                    <option value="2">Enlatados</option>
+                    <option value="3">Lacteos</option>
+                </select>
+                
+                <label for="descripcion">Descripción</label><br>
+                <textarea id="descripcion" name="descripcion" placeholder="Agrega una Descrpción..."></textarea>
+                <br>
+                <button class="button" type="button" onclick="nuevo_produc()">Agregar</button>
+            </form>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="article"> 
+            <div class="parrafo">
+                <p>Politicas de privacidad</p>
+                <p>Dirección</p>
+                <p>Telefono</p>
+            </div>
+            <div class="logo">
+                <img src="./img/girl-N.png" alt="Logo Girl">
+            </div>
+            
+        </div>
+        <aside>
+            <div class="redes">
+                <img src="./img/you.png" alt="Youtube">
+                <img src="./img/face.png" alt="Facebook">
+                <img src="./img/twit.png" alt="Twitter">
+                <img src="./img/insta.png" alt="Instagram">
+            </div>
+            
+        </aside>
+        
+    </footer>
+    
+</body>
+</html>
+<script src="js/hora.js"></script>
+<script src="js/alerts.js"></script>
+<script src="js/nuevo_producto.js"></script>
+<script src="js/nueva_compra.js"></script>
+
